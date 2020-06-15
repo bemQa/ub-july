@@ -480,18 +480,6 @@ header {
     align-items: center;
 }
 
-.logos div:first-child::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -30px;
-    bottom: 0;
-    margin: auto;
-    height: 57px;
-    width: 2px;
-    background: rgba(255, 255, 255, .3);
-}
-
 .logo_ub {
     position: relative;
     margin-right: 30px;
@@ -1641,11 +1629,6 @@ span.error {
     .logo_5ka {
         width: 68px;
         margin-left: 15px;
-    }
-
-    .logos div:first-child::after {
-        right: -15px;
-        height: 29px;
     }
 
     .burger {
