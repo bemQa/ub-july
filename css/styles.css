@@ -883,6 +883,15 @@ footer {
     line-height: 26px;
 }
 
+.phone__text {
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: .3;
+    text-align: left;
+    margin: 0 0 0 20px;
+}
+
 .input-field {
     position: relative;
     width: 100%;
