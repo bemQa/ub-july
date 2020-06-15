@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'AppetiteMond';
+    src: url('AppetiteMond.eot');
+    src: url('AppetiteMond.eot?#iefix') format('embedded-opentype'),
+        url('AppetiteMond.woff2') format('woff2'),
+        url('AppetiteMond.woff') format('woff'),
+        url('AppetiteMond.ttf') format('truetype'),
+        url('AppetiteMond.svg#AppetiteMond') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: '5ka Sans Design';
+    src: url('5kaSansDesign-Black.eot');
+    src: url('5kaSansDesign-Black.eot?#iefix') format('embedded-opentype'),
+        url('5kaSansDesign-Black.woff2') format('woff2'),
+        url('5kaSansDesign-Black.woff') format('woff'),
+        url('5kaSansDesign-Black.ttf') format('truetype'),
+        url('5kaSansDesign-Black.svg#5kaSansDesign-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Head B';
+    src: url('IntroHeadB-Base.eot');
+    src: url('IntroHeadB-Base.eot?#iefix') format('embedded-opentype'),
+        url('IntroHeadB-Base.woff2') format('woff2'),
+        url('IntroHeadB-Base.woff') format('woff'),
+        url('IntroHeadB-Base.ttf') format('truetype'),
+        url('IntroHeadB-Base.svg#IntroHeadB-Base') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Head H';
+    src: url('IntroHeadH-Base.eot');
+    src: url('IntroHeadH-Base.eot?#iefix') format('embedded-opentype'),
+        url('IntroHeadH-Base.woff2') format('woff2'),
+        url('IntroHeadH-Base.woff') format('woff'),
+        url('IntroHeadH-Base.ttf') format('truetype'),
+        url('IntroHeadH-Base.svg#IntroHeadH-Base') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
