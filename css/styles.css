@@ -510,6 +510,14 @@ header {
     margin-right: 24px;
 }
 
+.menu-link.active {
+    color: #F6DF2D;
+}
+
+.menu-link.active::before {
+    background: #F6DF2D;
+}
+
 .menu-link::before {
     content: '';
     position: absolute;
@@ -521,8 +529,7 @@ header {
     transition: .2s linear;
 }
 
-.menu-link:hover::before,
-.menu-link.active::before {
+.menu-link:hover::before {
     width: 100%;
 }
 
@@ -531,12 +538,7 @@ header {
 }
 
 .lk-link {
-    color: #FCC93D;
     padding-left: 20px;
-}
-
-.lk-link::before {
-    background: #FCC93D;
 }
 
 .lk-link::after {
@@ -548,11 +550,11 @@ header {
     margin: auto;
     width: 12px;
     height: 15px;
-    background: url(../img/profile.svg);
+    background: url(../img/profile-white.svg);
 }
 
-.lk-link:hover {
-    color: #FCC93D;
+.lk-link.active::after {
+    background: url(../img/profile.svg);
 }
 
 .banner {
@@ -581,34 +583,119 @@ header {
     font-weight: 500;
     font-size: 72px;
     line-height: 65px;
-    color: #FCC93D;
+    color: #F6DF2D;
     text-align: center;
 }
 
-.banner-text::after {
-    content: '';
+.banner-text span {
+    display: block;
+    font-size: 33px;
+    line-height: 42px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 70px auto 100px;
+}
+
+.date-filter {
+    position: relative;
+    max-width: 230px;
+    width: 100%;
+    padding-left: 115px;
+}
+
+.date-filter::before {
+    content: 'Неделя розыгрыша';
     position: absolute;
-    width: 83px;
-    height: 88px;
-    background: url(../img/blick.svg) center no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 15px;
+    margin: auto;
+}
+
+.date-filter .select2 {
+    z-index: auto;
+}
+
+.date-filter .select2-container .select2-selection--single {
+    background: transparent;
+    border-radius: 0;
+    width: 100%;
+    height: 20px;
+    padding: 2px 20px 2px 0;
+    border: 0;
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+.date-filter .select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: rgba(39, 39, 39, .8);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-right: 0;
+    color: #CE1723;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 0;
+}
+
+.date-filter .select2-container--open .select2-dropdown--below {
+    padding-top: 0;
+    top: 0;
+}
+
+.phone-filter {
+    max-width: 300px;
+    margin: 0;
+}
+
+.filters .phone-filter input:not([type="checkbox"]) {
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+}
+
+.filters .phone-filter input:not([type="checkbox"]):focus {
+    border-color: #CE1723;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    background: url(../img/search.svg) center no-repeat;
     background-size: cover;
-    mix-blend-mode: screen;
-    opacity: 0.85;
+    transition: all .2s linear;
 }
 
-.winners-text::after {
-    top: -30px;
-    left: -40px;
-}
-
-.faq-banner-text::after {
-    top: -35px;
-    left: -35px;
-}
-
-.lk-text::after {
-    bottom: -25px;
-    left: -40px;
+.search:hover {
+    background: url(../img/search-red.svg) center no-repeat;
+    background-size: cover;
 }
 
 .table-wrapper {
@@ -623,6 +710,7 @@ header {
 }
 
 .winners-table {
+    max-width: 600px;
     margin-top: 80px;
     margin-bottom: 100px;
 }
@@ -920,13 +1008,14 @@ footer {
     text-align: center;
     letter-spacing: 0.02em;
     color: #CD1722;
-    background: #FCC93D;
+    background: #F6DF2D;
     border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(98, 0, 0, 0.43);
     transition: all .3s linear;
 }
 
 .btn:hover {
-    background: #ecbd3a;
+    background: #FFF8C1;
 }
 
 .btn.disabled {
@@ -1022,7 +1111,7 @@ span.error {
 }
 
 .faq-title.active {
-    color: #FCC93D;
+    color: #F6DF2D;
     text-decoration: none;
 }
 
@@ -1196,11 +1285,11 @@ span.error {
 
 .profile-link,
 .profile-link:hover {
-    color: #FCC93D;
+    color: #F6DF2D;
 }
 
 .profile-link::before {
-    background: #FCC93D;
+    background: #F6DF2D;
 }
 
 .lk-container {
@@ -1308,7 +1397,7 @@ span.error {
     font-weight: 500;
     font-size: 54px;
     line-height: 65px;
-    color: #FCC93D;
+    color: #F6DF2D;
     margin-bottom: 50px;
 }
 
@@ -1459,7 +1548,7 @@ span.error {
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    color: #FCC93D;
+    color: #F6DF2D;
     margin-bottom: 20px;
 }
 
@@ -1709,6 +1798,21 @@ span.error {
     .banner-text {
         font-size: 38px;
         line-height: 49px;
+    }
+
+    .banner-text span {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .filters {
+        flex-direction: column;
+        margin: 60px auto 40px;
+    }
+
+    .phone-filter {
+        order: -1;
+        margin-bottom: 20px !important;
     }
 
     .winners-table {
