@@ -227,6 +227,14 @@ input {
 	overflow: hidden;
 }
 
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
 /*SCROLL ---------------------- */
 body .scroll-element,
 body .scroll-element div {
@@ -557,6 +565,10 @@ header {
     background: url(../img/profile.svg);
 }
 
+.menu-links form {
+    display: inline-block;
+}
+
 .banner {
     position: relative;
     margin: auto;
@@ -567,6 +579,12 @@ header {
     background: url(../img/banner-bg.png) center repeat-x;
     background-size: contain;
     z-index: 0;
+}
+
+.lk-banner {
+    height: 435px;
+    background: url(../img/lk-banner-bg.png) center repeat-x;
+    background-size: contain;
 }
 
 @media (max-width: 1440px) {
@@ -784,10 +802,6 @@ footer {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-}
-
-.link:hover {
-    text-decoration: underline;
 }
 
 .mndlz {
@@ -1309,47 +1323,42 @@ span.error {
 .profile {
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto 50px;
+    margin: 60px auto 50px;
     display: flex;
+    -ms-align-items: center;
+    align-items: center;
     justify-content: center;
-}
-
-.card {
-    width: 251px;
-    height: 175px;
-    background: url(../img/card.png);
-    font-family: "Intro Head H";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #000000;
-    padding: 110px 40px 50px;
-}
-
-.profile-info {
-    margin-top: 25px;
-    margin-left: 30px;
+    text-align: left;
 }
 
 .profile-name {
     font-family: "Intro Head H";
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
-    line-height: 41px;
-    color: #CE1723;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 32px;
+    color: #fff;
+    margin: 0 20px;
 }
 
 .profile-text {
-    font-size: 21px;
-    line-height: 26px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.profile-text span {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .lk-table {
-    max-width: 370px;
+    max-width: 1040px;
+    margin-bottom: 50px;
 }
 
 .main-banner {
@@ -1644,6 +1653,10 @@ span.error {
     justify-content: center;
 }
 
+.error-logos .logo_ub {
+    margin: auto;
+}
+
 .error-title {
     font-family: "Intro Head H";
     font-style: normal;
@@ -1676,6 +1689,122 @@ span.error {
 .error-btn-wrap {
     max-width: 240px;
     margin: 50px auto 0;
+}
+
+.title {
+    font-family: "Intro Head H";
+    font-size: 38px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #CE1723;
+    margin-bottom: 40px;
+}
+
+.my-payment-info .title {
+    text-align: left;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.title span {
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.lk-container table td {
+    border-bottom: 0;
+}
+
+.check-preview {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px solid #9D9D9D;
+    margin: auto;
+}
+
+.check-preview.rejected {
+    border-color: #CE1723;
+}
+
+.rejected-link,
+.get-prize-link,
+.rejected-link:hover,
+.get-prize-link:hover {
+    color: #CE1723;
+}
+
+.get-prize-link {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.win-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+    height: 67px;
+    border-radius: 50px;
+    background: #F6DF2D;
+    margin: auto;
+}
+
+.win-img img {
+    width: 42px;
+}
+
+.my-payment-info {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.payment-count {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 85px;
+    background: url(../img/payment-count-bg.svg);
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.count-num {
+    font-family: "Intro Head H";
+    font-size: 54px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.count-text {
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.iframe-wrap,
+.iframe-wrap iframe {
+    scrollbar-width: none;
+}
+
+.iframe-wrap {
+    height: 100%;
+    min-height: 340px;
+    width: 100%;
+}
+
+.iframe-wrap iframe {
+    height: 100vh;
+    max-height: 340px;
+    width: 100%;
 }
 
 @media (max-width: 1280px) {
@@ -1811,6 +1940,10 @@ span.error {
         background-size: contain;
     }
 
+    .lk-banner {
+        height: 455px;
+    }
+
     .banner-text {
         font-size: 38px;
         line-height: 49px;
@@ -1907,20 +2040,19 @@ span.error {
     .profile {
         flex-direction: column;
         text-align: center;
+        margin: 20px auto 50px;
     }
 
     .card {
         margin: auto;
     }
 
-    .profile-info {
-        margin-left: auto;
-        margin-right: auto;
+    .profile-name {
+        margin: 0 0 25px;
     }
 
-    .profile-name {
-        font-size: 28px;
-        line-height: 39px;
+    .profile-text:last-child {
+        margin-top: 20px;
     }
 
     .main-logos {
@@ -2063,6 +2195,68 @@ span.error {
     .error-btn-wrap {
         margin: 40px auto 0;
     }
+
+    .lk-container table thead,
+    .lk-container table tbody {
+        text-align: left;
+    }
+
+    table td {
+        padding: 20px 0;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 41px;
+    }
+
+    .title span {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .my-payment-info .title {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .my-payment-info {
+        flex-direction: column;
+    }
+
+    .lk-container .table-wrapper {
+        max-width: 320px;
+        height: 230px;
+    }
+
+    .check-info,
+    .win-info {
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .check-preview {
+        margin: 0 10px 0 0;
+    }
+
+    .win-img {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px 0 0;
+    }
+
+    .get-prize-link {
+        width: 70px;
+    }
+}
+
+@media (max-width: 690px) {
+    .lk-banner {
+        background-size: cover;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2078,6 +2272,10 @@ span.error {
 
     .card-btn::after {
         left: 15px;
+    }
+
+    .lk-text {
+        font-size: 35px;
     }
 }
 
