@@ -1025,6 +1025,7 @@ footer {
 
 .btn:hover {
     background: #FFF8C1;
+    color: #CD1722;
 }
 
 .btn.disabled {
@@ -1391,14 +1392,6 @@ span.error {
     margin-left: 50px;
 }
 
-.action-date {
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
 .main-banner-text {
     position: relative;
     font-family: "AppetiteMond";
@@ -1406,34 +1399,24 @@ span.error {
     font-weight: 500;
     font-size: 54px;
     line-height: 65px;
-    color: #F6DF2D;
-    margin-bottom: 50px;
+    color: #fff;
+    margin-bottom: 16px;
 }
 
-/*.main-banner-text::after {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 25px;
-    width: 83px;
-    height: 88px;
-    background: url(../img/blick.svg) center no-repeat;
-    background-size: cover;
-    mix-blend-mode: screen;
-    opacity: 0.85;
-}*/
+.action-date {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 28px;
+}
 
 .main-btn-wrap {
     max-width: 203px;
 }
 
-.main-btn {
-    background: #fff;
-    color: #CD1722;
-}
-
 .main-right {
-    max-width: 685px;
+    max-width: 635px;
     width: 100%;
     margin-left: 50px;
 }
@@ -1445,65 +1428,89 @@ span.error {
 .steps {
     display: flex;
     justify-content: space-between;
-    margin: 80px auto 75px;
+    margin: 80px auto 0;
 }
 
 .step {
+    position: relative;
     max-width: 294px;
     width: 100%;
-    text-align: center;
 }
 
 .step-title {
     font-family: "AppetiteMond";
     font-style: italic;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 24px;
-    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
     color: #CD1722;
-    margin-bottom: 44px;
-}
-
-.step3 .step-title {
-    margin-bottom: 22px;
+    margin-bottom: 5px;
 }
 
 .step-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto 30px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 .step1 .step-img {
-    max-width: 278px;
+    max-width: 226px;
 }
 
 .step2 .step-img {
-    max-width: 271px;
+    max-width: 217px;
+}
+
+.step3 .step-img {
+    max-width: 154px;
+}
+
+.step4 .step-img {
+    max-width: 186px;
+}
+
+.step-num {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #CE1723;
+    font-family: "AppetiteMond";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1;
+    color: #fff;
 }
 
 .step-text {
-    font-size: 24px;
+    font-family: "AppetiteMond";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 28px;
-}
-
-.red-text {
-   color: #CD1722; 
+    color: #CE1723; 
 }
 
 .step-remark {
-    margin-top: 5px;
-    font-size: 14px;
-    line-height: 21px;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .card-btn-wrap {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    max-width: 326px;
+    margin: 0 auto 70px;
+    max-width: 240px;
 }
 
 .card-btn {
@@ -1918,15 +1925,14 @@ span.error {
 
     .main-logos {
         position: absolute;
-        top: 80px;
-        left: 0;
+        top: 0;
+        left: 10px;
         right: 0;
         margin: auto;
-        justify-content: center;
     }
 
     .main-logos .logo_ub {
-        width: 96px;
+        width: 84px;
     }
 
     .main-logos .logo_5ka {
@@ -1950,41 +1956,34 @@ span.error {
     }
 
     .action {
-        top: 20px;
-        right: auto;
-        left: 10px;
-        width: 106px;
-        height: 40px;
-        background: url(../img/action-bg-mob.svg) center no-repeat;
-        background-size: cover;
-        font-size: 32px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 180px;
+        height: 90px;
+        background-size: contain;
+        font-size: 22px;
+        padding: 15px 0;
     }
 
     .action-date {
-        font-size: 14px;
-        line-height: 17px;
-        width: 86px;
-        position: absolute;
-        top: 25px;
-        left: 130px;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
     }
 
     .main-right {
         order: -1;
-        max-width: 375px;
+        max-width: 330px;
         margin-left: 0;
+        margin-bottom: 40px;
     }
 
     .main-banner-text {
-        font-size: 38px;
-        line-height: 49px;
+        font-size: 31px;
+        line-height: 35px;
         text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .main-banner-text::after {
-        top: 20px;
-        left: 5px;
+        margin-bottom: 10px;
     }
 
     .main-btn-wrap {
@@ -1992,21 +1991,33 @@ span.error {
     }
 
     .steps {
-        margin: 60px auto 180px;
+        margin: 30px auto 50px;
         flex-direction: column;
         align-items: center;
     }
 
     .step {
-        margin-bottom: 70px;
+        text-align: center;
+        margin-bottom: 30px;
     }
 
-    .step3 {
+    .step4 {
         margin-bottom: 0;
     }
 
+    .step-img {
+        margin-bottom: 40px;
+    }
+
+    .step-num {
+        top: 190px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     .card-btn-wrap {
-        bottom: -100px;
+        margin-bottom: 70px;
     }
 
     .products {
