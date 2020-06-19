@@ -499,11 +499,17 @@ header {
 }
 
 .menu {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .menu-links {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 660px;
+    width: 100%;
     font-family: "Intro Head H";
     font-style: normal;
     font-weight: normal;
@@ -554,7 +560,7 @@ header {
     position: absolute;
     top: 0;
     left: 0px;
-    bottom: 0;
+    bottom: 3px;
     margin: auto;
     width: 12px;
     height: 15px;
@@ -749,7 +755,7 @@ table {
     border-spacing: 0;
 }
 
-table thead {
+table th {
     font-family: "Intro Head H";
     font-style: normal;
     font-weight: normal;
@@ -1939,6 +1945,8 @@ span.error {
         font-size: 30px;
         line-height: 37px;
         text-align: center;
+        display: block;
+        max-width: 100%;
     }
 
     .menu-links.active {
@@ -1960,6 +1968,7 @@ span.error {
     }
 
     .lk-link::after {
+        bottom: 4px;
         width: 20px;
         height: 25px;
         background: url(../img/profile.svg);
@@ -2132,6 +2141,7 @@ span.error {
         background: url(../img/main-bg.png) center 0 repeat-x;
         background-size: cover;
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .action {
@@ -2149,6 +2159,7 @@ span.error {
         font-size: 18px;
         line-height: 19px;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .main-right {
