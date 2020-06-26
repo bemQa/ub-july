@@ -235,6 +235,10 @@ input {
     text-decoration: none;
 }
 
+.link-blue {
+    color: blue;
+}
+
 /*SCROLL ---------------------- */
 body .scroll-element,
 body .scroll-element div {
